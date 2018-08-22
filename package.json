@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "tsc": "tsc",
     "dev": "ts-node ./src/index.ts",
     "start": "nodemon ./dist/index.js",
     "prod": "npm run build && npm run start",
-    "postinstall": "npm run tsc"
+    "postinstall": "npm run build"
   },
   "author": "",
   "license": "",
